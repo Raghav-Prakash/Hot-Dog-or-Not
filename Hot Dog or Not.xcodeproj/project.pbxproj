@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3564CC08234AB246CA9B5EAD /* Pods_Hot_Dog_or_Not.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3983A4EA5A34C7FBD9968B /* Pods_Hot_Dog_or_Not.framework */; };
 		A00EB22D210579AC0017EC48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00EB22C210579AC0017EC48 /* AppDelegate.swift */; };
 		A00EB22F210579AC0017EC48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00EB22E210579AC0017EC48 /* ViewController.swift */; };
 		A00EB232210579AC0017EC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00EB230210579AC0017EC48 /* Main.storyboard */; };
 		A00EB234210579AC0017EC48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00EB233210579AC0017EC48 /* Assets.xcassets */; };
 		A00EB237210579AC0017EC48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00EB235210579AC0017EC48 /* LaunchScreen.storyboard */; };
+		A00EB23F21057A830017EC48 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A00EB23E21057A830017EC48 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8548849A9EC175D04E3DD6E1 /* Pods-Hot Dog or Not.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hot Dog or Not.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hot Dog or Not/Pods-Hot Dog or Not.release.xcconfig"; sourceTree = "<group>"; };
 		A00EB229210579AC0017EC48 /* Hot Dog or Not.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hot Dog or Not.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00EB22C210579AC0017EC48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A00EB22E210579AC0017EC48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		A00EB233210579AC0017EC48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A00EB236210579AC0017EC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A00EB238210579AC0017EC48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00EB23E21057A830017EC48 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		B2EACE2114C4235AB4F08A35 /* Pods-Hot Dog or Not.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hot Dog or Not.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hot Dog or Not/Pods-Hot Dog or Not.debug.xcconfig"; sourceTree = "<group>"; };
+		EF3983A4EA5A34C7FBD9968B /* Pods_Hot_Dog_or_Not.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hot_Dog_or_Not.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3564CC08234AB246CA9B5EAD /* Pods_Hot_Dog_or_Not.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C13D608510C0453C68B06BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2EACE2114C4235AB4F08A35 /* Pods-Hot Dog or Not.debug.xcconfig */,
+				8548849A9EC175D04E3DD6E1 /* Pods-Hot Dog or Not.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A00EB220210579AC0017EC48 = {
 			isa = PBXGroup;
 			children = (
 				A00EB22B210579AC0017EC48 /* Hot Dog or Not */,
 				A00EB22A210579AC0017EC48 /* Products */,
+				2C13D608510C0453C68B06BA /* Pods */,
+				D3ED32A52E4D5CD066F383DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +78,17 @@
 				A00EB233210579AC0017EC48 /* Assets.xcassets */,
 				A00EB235210579AC0017EC48 /* LaunchScreen.storyboard */,
 				A00EB238210579AC0017EC48 /* Info.plist */,
+				A00EB23E21057A830017EC48 /* Inceptionv3.mlmodel */,
 			);
 			path = "Hot Dog or Not";
+			sourceTree = "<group>";
+		};
+		D3ED32A52E4D5CD066F383DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF3983A4EA5A34C7FBD9968B /* Pods_Hot_Dog_or_Not.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A00EB23B210579AC0017EC48 /* Build configuration list for PBXNativeTarget "Hot Dog or Not" */;
 			buildPhases = (
+				76E081DCE889A274603FBFE3 /* [CP] Check Pods Manifest.lock */,
 				A00EB225210579AC0017EC48 /* Sources */,
 				A00EB226210579AC0017EC48 /* Frameworks */,
 				A00EB227210579AC0017EC48 /* Resources */,
+				6FC43E66058882EE65042030 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,12 +160,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6FC43E66058882EE65042030 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hot Dog or Not/Pods-Hot Dog or Not-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hot Dog or Not/Pods-Hot Dog or Not-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76E081DCE889A274603FBFE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hot Dog or Not-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A00EB225210579AC0017EC48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A00EB22F210579AC0017EC48 /* ViewController.swift in Sources */,
+				A00EB23F21057A830017EC48 /* Inceptionv3.mlmodel in Sources */,
 				A00EB22D210579AC0017EC48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +341,7 @@
 		};
 		A00EB23C210579AC0017EC48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2EACE2114C4235AB4F08A35 /* Pods-Hot Dog or Not.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +357,7 @@
 		};
 		A00EB23D210579AC0017EC48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8548849A9EC175D04E3DD6E1 /* Pods-Hot Dog or Not.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
